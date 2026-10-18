@@ -5,7 +5,7 @@ import { HeroSlideshow } from "./HeroSlideshow";
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-[calc(100svh-2.75rem-2.5rem)] items-center overflow-hidden bg-brand-900 text-white lg:min-h-[calc(100svh-3rem-2.5rem)]">
+    <section id="inicio" className="relative flex min-h-svh items-center overflow-hidden bg-brand-900 pt-11 text-white lg:pt-12">
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-10 sm:px-6 md:grid-cols-2 md:py-16">
         <div>
           <div className="w-fit rounded-xl bg-white px-3 py-3 shadow-sm">

@@ -16,7 +16,9 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  /* Smaller than the header in its scrolled state (65px desktop / ~111px mobile),
+     so a jumped-to section tucks under it and no hero shows through. */
+  scroll-padding-top: 3.5rem;
 }
 
 body {

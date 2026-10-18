@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { NAV, PHYSIO_WA } from "@/lib/site";
-import { WhatsAppButton } from "./Button";
+import { NAV } from "@/lib/site";
 
 export function Header() {
   const [heroVisible, setHeroVisible] = useState(true);
@@ -13,7 +12,7 @@ export function Header() {
     if (!hero) return;
     const observer = new IntersectionObserver(
       ([entry]) => setHeroVisible(entry.isIntersecting),
-      // Must exceed `scroll-padding-top` (5rem = 80px) in globals.css, otherwise
+      // Must exceed `scroll-padding-top` (3rem = 48px) in globals.css, otherwise
       // anchor jumps stop with the hero's last pixels still under the threshold.
       // (rootMargin only accepts px or %, not rem.)
       { rootMargin: "-96px 0px 0px 0px" },
@@ -24,7 +23,7 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b backdrop-blur transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 border-b backdrop-blur transition-colors duration-300 ${
         heroVisible ? "border-transparent bg-brand-900" : "border-brand-100 bg-white/90"
       }`}
     >
@@ -50,11 +49,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-        {!heroVisible && (
-          <WhatsAppButton href={PHYSIO_WA} className="!min-h-10 !px-4 !py-2 !text-sm">
-            Agendar
-          </WhatsAppButton>
-        )}
       </div>
       {/* Mobile nav: horizontally scrollable, no JS needed */}
       <nav aria-label="Principal (mobile)" className={`flex gap-5 overflow-x-auto px-4 py-2 lg:hidden ${heroVisible ? "" : "border-t border-brand-100"}`}>
