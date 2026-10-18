@@ -28,7 +28,7 @@ export function Header() {
       }`}
     >
       <div
-        className={`mx-auto max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 ${
+        className={`mx-auto max-w-6xl items-center justify-center gap-4 lg:justify-between px-4 sm:px-6 ${
           heroVisible ? "hidden h-12 lg:flex" : "flex h-16"
         }`}
       >

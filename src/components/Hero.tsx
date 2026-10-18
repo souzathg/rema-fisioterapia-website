@@ -6,7 +6,7 @@ import { HeroSlideshow } from "./HeroSlideshow";
 export function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-svh items-center overflow-hidden bg-brand-900 pt-11 text-white lg:pt-12">
-      <div className="mx-auto grid w-full max-w-6xl items-start gap-10 px-4 py-10 sm:px-6 md:grid-cols-2 md:py-16">
+      <div className="mx-auto grid w-full max-w-6xl items-start gap-10 px-4 py-10 lg:py-10 sm:px-6 md:grid-cols-2 md:py-16">
         <div>
           <div className="w-fit rounded-xl pb-5 lg:pb-10">
             <Image src="/images/logo-color.png" alt="ReMA | fisioterapia" width={400} height={162} priority className="h-24 w-auto sm:h-28" />
