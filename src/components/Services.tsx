@@ -25,7 +25,7 @@ export function Services() {
           {SERVICES.map((s) => (
             <article key={s.title} className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-brand-100">
               <div className="relative aspect-[4/3]">
-                <Image src={s.image} alt={s.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+                <Image src={s.image} alt={s.alt} fill loading="eager" sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" style={{ objectPosition: s.position }} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-brand-900">{s.title}</h3>

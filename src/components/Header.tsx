@@ -131,7 +131,7 @@ export function Header() {
           aria-hidden={heroVisible || undefined}
           className={`transition-opacity duration-300 ${heroVisible ? "pointer-events-none opacity-0" : "opacity-100"}`}
         >
-          <Image src="/images/logo-color-without-slogan.png" alt="ReMA | fisioterapia" width={120} height={49} priority className="h-9 w-auto" />
+          <Image src="/images/logo-color-without-slogan.png" alt="ReMA | fisioterapia" width={120} height={49} preload className="h-9 w-auto" />
         </a>
         <NavLinks
           active={active}

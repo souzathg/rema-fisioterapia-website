@@ -34,6 +34,8 @@ export interface Service {
   text: string;
   image: string;
   alt: string;
+  /** CSS object-position for the card crop; defaults to centered. */
+  position?: string;
 }
 
 export const SERVICES: Service[] = [
@@ -42,6 +44,7 @@ export const SERVICES: Service[] = [
     text: "Protocolo baseado em evidências científicas, com comunicação direta com o cirurgião responsável por cada caso.",
     image: "/images/clinic-3.jpg",
     alt: "Fisioterapeuta orientando paciente em bicicleta ergométrica",
+    position: "50% 10%",
   },
   {
     title: "Retorno precoce ao treino",
@@ -54,6 +57,7 @@ export const SERVICES: Service[] = [
     text: "Recupere-se mais rápido da fadiga após treinos intensos e competições e mantenha a constância da sua performance.",
     image: "/images/clinic-1.jpg",
     alt: "Paciente em sessão de recuperação com botas de compressão",
+    position: "50% 65%",
   },
 ];
 

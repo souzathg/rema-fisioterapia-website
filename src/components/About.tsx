@@ -5,7 +5,7 @@ export function About() {
     <section id="quem-somos" className="bg-brand-50 py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[320px_1fr]">
         <div className="relative mx-auto aspect-[3/4] w-full max-w-xs overflow-hidden rounded-3xl md:max-w-none">
-          <Image src="/images/rafael.jpg" alt="Dr. Rafael Shiroma, fisioterapeuta e fundador da ReMA" fill sizes="320px" className="object-cover" />
+          <Image src="/images/rafael.jpg" alt="Dr. Rafael Shiroma, fisioterapeuta e fundador da ReMA" fill loading="eager" sizes="320px" className="object-cover" />
         </div>
         <div>
           <h2 className="font-display text-3xl font-bold uppercase text-brand-900 sm:text-4xl">Quem somos</h2>

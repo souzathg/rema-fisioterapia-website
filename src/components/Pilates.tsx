@@ -14,6 +14,7 @@ export function Pilates() {
             src="/images/clinic-2.jpg"
             alt="Aluna praticando Pilates no Cadillac"
             fill
+            loading="eager"
             sizes="(min-width: 768px) 45vw, 100vw"
             className="object-cover"
           />

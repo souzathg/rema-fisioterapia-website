@@ -48,7 +48,8 @@ export function HeroSlideshow() {
           src={slide.src}
           alt={slide.alt}
           fill
-          priority={i === 0}
+          preload={i === 0}
+          loading="eager"
           sizes="(min-width: 768px) 45vw, 90vw"
           aria-hidden={i !== index}
           className={`object-cover transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0"}`}
