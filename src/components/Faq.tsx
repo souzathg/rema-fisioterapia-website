@@ -2,8 +2,11 @@ import { FAQ } from "@/lib/site";
 
 export function Faq() {
   return (
-    <section id="faq" className="py-16 md:py-24">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+    <section id="faq" className="pb-16 md:pb-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <hr className="border-brand-100" />
+      </div>
+      <div className="mx-auto max-w-3xl px-4 pt-16 sm:px-6 md:pt-24">
         <h2 className="font-display text-3xl font-bold uppercase text-brand-900 sm:text-4xl">Perguntas frequentes</h2>
         <div className="mt-8 divide-y divide-brand-100 rounded-2xl ring-1 ring-brand-100">
           {FAQ.map((item) => (
