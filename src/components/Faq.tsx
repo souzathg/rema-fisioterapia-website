@@ -8,7 +8,7 @@ export function Faq() {
       </div>
       <div className="mx-auto max-w-3xl px-4 pt-16 sm:px-6 md:pt-24">
         <h2 className="font-display text-3xl font-bold uppercase text-brand-900 sm:text-4xl">Perguntas frequentes</h2>
-        <div className="mt-8 divide-y divide-brand-100 rounded-2xl ring-1 ring-brand-100">
+        <div className="mt-8 divide-y divide-brand-100 overflow-hidden rounded-2xl ring-1 ring-brand-100">
           {FAQ.map((item) => (
             <details key={item.q} className="group p-5 open:bg-brand-50">
               <summary className="flex min-h-8 cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold marker:content-none focus-visible:outline-2 focus-visible:outline-brand-700 [&::-webkit-details-marker]:hidden">
